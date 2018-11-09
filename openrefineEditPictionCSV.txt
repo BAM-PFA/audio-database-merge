@@ -1,0 +1,1736 @@
+[
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column tape number using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "isBlank(value)",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "tape number",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "tape number"
+        }
+      ]
+    },
+    "columnName": "tape number",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column tape number using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tape number",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "isBlank(value)",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "tape number",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "tape number"
+        },
+        {
+          "omitError": false,
+          "expression": "facetCount(value, 'value', 'tape number') > 1",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "tape number",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "tape number"
+        },
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column speakers 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "speakers 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DeeDee Halleck",
+          "Deedee Halleck"
+        ],
+        "to": "DeeDee Halleck"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tom Di Maria",
+          "Tom di Maria"
+        ],
+        "to": "Tom Di Maria"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Jeanne C. Finley",
+          "Jeanne C Finley"
+        ],
+        "to": "Jeanne C. Finley"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "J. Hoberman",
+          "J Hoberman"
+        ],
+        "to": "J. Hoberman"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Scott MacDonald",
+          "Scott Macdonald"
+        ],
+        "to": "Scott MacDonald"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Deniz Göktürk",
+          "Deniz Gokturk"
+        ],
+        "to": "Deniz Göktürk"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LaToya Beck",
+          "Latoya Beck"
+        ],
+        "to": "LaToya Beck"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "JIm McBride",
+          "Jim McBride"
+        ],
+        "to": "JIm McBride"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column speakers 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "speakers 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gian Piero Brunetta",
+          "Gian-Piero Brunetta"
+        ],
+        "to": "Gian-Piero Brunetta"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Antonia Lant",
+          "Antonia Lant 2"
+        ],
+        "to": "Antonia Lant"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Alan Sekula",
+          "Allan Sekula"
+        ],
+        "to": "Alan Sekula"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lynn  Hershman-Leeson",
+          "Lynn Hershman Leeson"
+        ],
+        "to": "Lynn  Hershman-Leeson"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pat O’Neill",
+          "Pat ONeill"
+        ],
+        "to": "Pat O’Neill"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Jan Christopher Horak",
+          "Jan-Christopher Horak"
+        ],
+        "to": "Jan-Christopher Horak"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lisa Marie Rollins",
+          "Lisa MarieRollins"
+        ],
+        "to": "Lisa Marie Rollins"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Heddy Honigmann",
+          "Hedy Honigmann"
+        ],
+        "to": "Heddy Honigmann"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column speakers 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "speakers 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Anna Lena Wibom",
+          "Anna-Lena Wibom"
+        ],
+        "to": "Anna-Lena Wibom"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column speakers 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "speakers 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Greta Snide",
+          "Greta Snider"
+        ],
+        "to": "Greta Snider"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Johan Grimonpez",
+          "Johan Grimonprez"
+        ],
+        "to": "Johan Grimonprez"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column speakers 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "speakers 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Trinh T. Minh-ha",
+          "Trinh Minh-ha"
+        ],
+        "to": "Trinh T. Minh-ha"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Karl Cohen",
+          "Karl F. Cohen"
+        ],
+        "to": "Karl F. Cohen"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column speakers 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "speakers 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Trinh T. Minh-ha",
+          "Trinh Minh-ha"
+        ],
+        "to": "Trinh T. Minh-ha"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Karl Cohen",
+          "Karl F. Cohen"
+        ],
+        "to": "Karl F. Cohen"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column speakers 2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "speakers 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nathanial Dorsky",
+          "Nathaniel Dorsky"
+        ],
+        "to": "Nathanial Dorsky"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Apsara Di Quinzio",
+          "Apsara DiQuinzio"
+        ],
+        "to": "Apsara Di Quinzio"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column speakers 1 using expression value.trim()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "speakers 1",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column speakers 2 using expression value.trim()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "speakers 2",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column speakers 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "speakers 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "R.G. Davis",
+          "RG Davis"
+        ],
+        "to": "R.G. Davis"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column speakers 3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "speakers 3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Janis Crystal Lipzin",
+          "Janis Lipzin"
+        ],
+        "to": "Janis Crystal Lipzin"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column film titles 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "film titles 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TONGUES UNTIED",
+          "Tongues Untied",
+          "Tongues untied"
+        ],
+        "to": "TONGUES UNTIED"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WILD AT HEART",
+          "Wild at Heart",
+          "Wild at heart"
+        ],
+        "to": "WILD AT HEART"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Space is the Place",
+          "Space is the place"
+        ],
+        "to": "Space is the Place"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WALKER",
+          "Walker"
+        ],
+        "to": "WALKER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Standard Operating Procedure",
+          "Standard operating procedure"
+        ],
+        "to": "Standard Operating Procedure"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Titicut Follies",
+          "Titicut follies"
+        ],
+        "to": "Titicut Follies"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BED AND SOFA",
+          "Bed and sofa"
+        ],
+        "to": "BED AND SOFA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "The Maestro: King of the cowboy artists",
+          "The maestro King of the Cowboy Artists"
+        ],
+        "to": "The Maestro: King of the cowboy artists"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BURDEN OF DREAMS",
+          "Burden of Dreams"
+        ],
+        "to": "BURDEN OF DREAMS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Position Among The Stars",
+          "Position among the stars"
+        ],
+        "to": "Position Among The Stars"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "repentance",
+          "Repentance"
+        ],
+        "to": "repentance"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BERKELEY IN THE SIXTIES",
+          "Berkeley in the sixties"
+        ],
+        "to": "BERKELEY IN THE SIXTIES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GABRIEL OVER THE WHITE HOUSE",
+          "Gabriel over the White House"
+        ],
+        "to": "GABRIEL OVER THE WHITE HOUSE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Manchurian Candidate",
+          "Manchurian candidate"
+        ],
+        "to": "Manchurian Candidate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tribulation 99",
+          "TRIBULATION 99"
+        ],
+        "to": "Tribulation 99"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wild Parrots of Telegraph Hill",
+          "Wild parrots of Telegraph Hill"
+        ],
+        "to": "Wild Parrots of Telegraph Hill"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Letter From An Unknown Woman",
+          "Letter from an unknown woman"
+        ],
+        "to": "Letter From An Unknown Woman"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ENTHUSIASM",
+          "Enthusiasm"
+        ],
+        "to": "ENTHUSIASM"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NORTHERN LIGHTS",
+          "Northern Lights"
+        ],
+        "to": "NORTHERN LIGHTS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Trouble in the Image",
+          "Trouble in the image"
+        ],
+        "to": "Trouble in the Image"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Strange Culture",
+          "Strange culture"
+        ],
+        "to": "Strange Culture"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "A Man is Not a Bird",
+          "Man is Not a Bird"
+        ],
+        "to": "A Man is Not a Bird"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BRIEF HISTORY OF TIME",
+          "Brief history of time"
+        ],
+        "to": "A BRIEF HISTORY OF TIME"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Man With A Movie Camera",
+          "Man with a Movie Camera"
+        ],
+        "to": "Man With A Movie Camera"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Twelve Disciples Of Nelson Mandela",
+          "Twelve disciples of Nelson Mandela"
+        ],
+        "to": "Twelve Disciples Of Nelson Mandela"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Always For Pleasure",
+          "Always for Pleasure"
+        ],
+        "to": "Always For Pleasure"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BUSH MAMA",
+          "Bush Mama"
+        ],
+        "to": "BUSH MAMA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "REASSEMBLAGE",
+          "Reassemblage"
+        ],
+        "to": "REASSEMBLAGE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tout Va Bien",
+          "Tout va bien"
+        ],
+        "to": "Tout Va Bien"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PERSONA",
+          "Persona"
+        ],
+        "to": "PERSONA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Time Regained",
+          "Time regained"
+        ],
+        "to": "Time Regained"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CHAN IS MISSING",
+          "Chan is missing"
+        ],
+        "to": "CHAN IS MISSING"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "The Secret garden",
+          "The secret garden"
+        ],
+        "to": "The Secret garden"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LIVING ON TOKYO TIME",
+          "Living On Tokyo Time"
+        ],
+        "to": "LIVING ON TOKYO TIME"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SOME LIKE IT HOT",
+          "Some like it hot"
+        ],
+        "to": "SOME LIKE IT HOT"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RESISTING ENEMY INTERROGATION",
+          "Resisting Enemy Interrogation"
+        ],
+        "to": "RESISTING ENEMY INTERROGATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pather Panchali",
+          "Pather panchali"
+        ],
+        "to": "Pather Panchali"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CIRCUS GIRLS",
+          "Circus Girls"
+        ],
+        "to": "CIRCUS GIRLS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WATER AND POWER",
+          "Water and power"
+        ],
+        "to": "WATER AND POWER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WR Mysteries Of The Organism",
+          "WR: Mysteries of the Organism"
+        ],
+        "to": "WR: Mysteries Of The Organism"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Saddest Music in the World",
+          "The saddest music in the world"
+        ],
+        "to": "The Saddest Music in the World"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "THE BIG PARADE",
+          "The Big Parade"
+        ],
+        "to": "THE BIG PARADE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GARLIC IS AS GOOD AS TEN MOTHERS",
+          "Garlic Is As Good As Ten Mothers"
+        ],
+        "to": "GARLIC IS AS GOOD AS TEN MOTHERS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ici Et Ailleurs",
+          "Ici et ailleurs"
+        ],
+        "to": "Ici et Ailleurs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "IN HEAVEN THERE IS NO BEER?",
+          "In Heaven There Is No Beer"
+        ],
+        "to": "IN HEAVEN THERE IS NO BEER?"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wendy And Lucy",
+          "Wendy and Lucy"
+        ],
+        "to": "Wendy And Lucy"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Killer of Sheep",
+          "Killer of sheep"
+        ],
+        "to": "Killer of Sheep"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Into Great Silence",
+          "Into great silence"
+        ],
+        "to": "Into Great Silence"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "On The Beat",
+          "On the beat"
+        ],
+        "to": "On The Beat"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AKA Don Bonus",
+          "aka don bonus"
+        ],
+        "to": "AKA Don Bonus"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NIGHTS OF CABIRIA",
+          "Nights Of Cabiria"
+        ],
+        "to": "NIGHTS OF CABIRIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Que Viva Mexico",
+          "Que viva Mexico"
+        ],
+        "to": "Que Viva Mexico"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "JO-JO AT THE GATE OF THE LIONS",
+          "Jojo At The Gate of Lions"
+        ],
+        "to": "JO-JO AT THE GATE OF THE LIONS"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column film titles 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "film titles 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Blow up",
+          "Blow-Up"
+        ],
+        "to": "Blow-up"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SUR NAME VIET GIVEN NAME NAM",
+          "Surname viet given name nam"
+        ],
+        "to": "SUR NAME VIET, GIVEN NAME NAM"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column film titles 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "film titles 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Manufactured landscapes",
+          "Manufactured landscapes intro"
+        ],
+        "to": "Manufactured landscapes"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Works From The Eisner Prize 2009",
+          "Works From The Eisner Prize 2010"
+        ],
+        "to": "Works From The Eisner Prize"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Night waltz the music of Paul Bowles",
+          "Night waltz the music of Paul Bowles intro"
+        ],
+        "to": "Night waltz the music of Paul Bowles"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Luminous procuress",
+          "Luminous procuress intro"
+        ],
+        "to": "Luminous procuress"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tarnished angels",
+          "Tarnished angels intro"
+        ],
+        "to": "Tarnished angels"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "In a lonely place",
+          "In a lonely place intro"
+        ],
+        "to": "In a lonely place"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Charles Burnett",
+          "Charles Burnett Panel Discussion"
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column film titles 1 using expression grel:\"\"",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": false,
+          "query": "workshop",
+          "name": "film titles 1",
+          "type": "text",
+          "columnName": "film titles 1"
+        }
+      ]
+    },
+    "columnName": "film titles 1",
+    "expression": "grel:\"\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column film titles 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "film titles 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "A WOMAN’S TOUCH",
+          "A Womans Touch"
+        ],
+        "to": "A WOMAN’S TOUCH"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column film titles 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "film titles 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Singin in the Rain",
+          "SINGING IN THE RAIN"
+        ],
+        "to": "Singin in the Rain"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column film titles 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "film titles 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Man With A Movie Camera",
+          "The Man With a Movie Camera"
+        ],
+        "to": "Man With A Movie Camera"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Eisner Competition",
+          "Eisner Prize Competition"
+        ],
+        "to": ""
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Petropolis",
+          "Petropolis intro"
+        ],
+        "to": "Petropolis"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Braddock Chronicles",
+          "The Braddock Chronicles"
+        ],
+        "to": "The Braddock Chronicles"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Serenade for Haiti",
+          "Serenade for Haiti conclusion"
+        ],
+        "to": "Serenade for Haiti"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column film titles 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "film titles 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Big sleep",
+          "The big sleep"
+        ],
+        "to": "The big sleep"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column film titles 2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "film titles 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CARAVAN",
+          "caravan"
+        ],
+        "to": "CARAVAN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SLAYING THE DRAGON",
+          "Slaying the dragon"
+        ],
+        "to": "SLAYING THE DRAGON"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column film titles 2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "film titles 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gap toothed Women",
+          "Gap-Toothed Women"
+        ],
+        "to": "Gap-toothed Women"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column technical/recording notes",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "technical/recording notes",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "part 1",
+          "Part 1"
+        ],
+        "to": "part 1"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          " score only",
+          "score only"
+        ],
+        "to": " score only"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "part 2",
+          "Part 2"
+        ],
+        "to": "part 2"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column event notes using expression grel:cells[\"technical/recording notes\"].value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": false,
+          "query": "part",
+          "name": "technical/recording notes",
+          "type": "text",
+          "columnName": "technical/recording notes"
+        }
+      ]
+    },
+    "columnName": "event notes",
+    "expression": "grel:cells[\"technical/recording notes\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column technical/recording notes using expression grel:\"\"",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": false,
+          "query": "part",
+          "name": "technical/recording notes",
+          "type": "text",
+          "columnName": "technical/recording notes"
+        }
+      ]
+    },
+    "columnName": "technical/recording notes",
+    "expression": "grel:\"\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column event notes",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "event notes",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "part one",
+          " Part One"
+        ],
+        "to": "part one"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "part 1",
+          " part 1"
+        ],
+        "to": "part 1"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "part two",
+          " Part Two"
+        ],
+        "to": "part two"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "part 2",
+          " part 2"
+        ],
+        "to": "part 2"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column event notes",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "event notes",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "part 2",
+          "Part2"
+        ],
+        "to": "part 2"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column event title",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "event title",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Eisner Awards",
+          "Eisner Awards 2006"
+        ],
+        "to": "Eisner Prize"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column event title",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "event title",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Works From The Eisner Prize 2009",
+          "Works From The Eisner Prize 2010"
+        ],
+        "to": "Works From The Eisner Prize"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Screenagers High School Film Festival",
+          "Screenagers High School Film Festival 2006"
+        ],
+        "to": "Screenagers High School Film Festival"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Conversation On Chantal Akerman",
+          "Conversation On Chantal Akerman3"
+        ],
+        "to": "Conversation On Chantal Akerman"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column event title",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "event title",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Heart Of Guy Maddin",
+          "Heart Of Guy Maddin part2"
+        ],
+        "to": "Heart Of Guy Maddin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Luminous procuress",
+          "Luminous procuress intro"
+        ],
+        "to": "Luminous procuress"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Here comes the videofreex",
+          "Here comes the videofreex intro"
+        ],
+        "to": "Here comes the videofreex"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "100 years with Juan Rulfo intro",
+          "100 years with Juan Rulfo"
+        ],
+        "to": "100 years with Juan Rulfo intro"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Manufactured landscapes intro",
+          "Manufactured landscapes"
+        ],
+        "to": "Manufactured landscapes intro"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rabbit in the moon intro",
+          "Rabbit in the moon"
+        ],
+        "to": "Rabbit in the moon intro"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "A Calculated Cinema",
+          "Calculated Cinema"
+        ],
+        "to": "A Calculated Cinema"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Films of Gregory J Markopoulos program2",
+          "Films of Gregory J Markopoulos program1"
+        ],
+        "to": "Films of Gregory J Markopoulos"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column pfa series",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "pfa series",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Works From The Eisner Prize 2009",
+          "Works From The Eisner Prize 2010"
+        ],
+        "to": "Works From The Eisner Prize"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column film titles 1 using expression grel:\"\"",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": false,
+          "query": "art and design",
+          "name": "film titles 1",
+          "type": "text",
+          "columnName": "film titles 1"
+        }
+      ]
+    },
+    "columnName": "film titles 1",
+    "expression": "grel:\"\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column film titles 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2016",
+                "l": "2016"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "year",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "year"
+        }
+      ]
+    },
+    "columnName": "film titles 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mother mortar father pestle",
+          "Mother mortar, father pestle"
+        ],
+        "to": "Mother mortar, father pestle"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Born-digital status using expression grel:\"Analog tape\"",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "isBlank(value)",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Born-digital status",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Born-digital status"
+        }
+      ]
+    },
+    "columnName": "Born-digital status",
+    "expression": "grel:\"Analog tape\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column film titles 1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "film titles 1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Don't breathe",
+          "Dont breathe"
+        ],
+        "to": "Don't breathe"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SOME LIKE IT HOT",
+          "Some like it hot"
+        ],
+        "to": "SOME LIKE IT HOT"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PENITENTIARY",
+          "Penitentiary"
+        ],
+        "to": "PENITENTIARY"
+      }
+    ]
+  }
+]
