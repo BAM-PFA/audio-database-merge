@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-import mysql.connector
-import os
-import sys
-import getpass
-
-import csv
 import json
+import sys
 
 from audioDb import DB as DB
+
+'''
+This takes the normalized JSON object and inserts records for
+each item.
+See audioNormalizer.py for the JSON structure.
+'''
 
 useAudioDB = "USE audio"
 
@@ -158,18 +159,6 @@ def add_recordings(data,connect):
 	cursor = connect.query(useAudioDB)
 	for recordingID in data['recordings']:
 		recording = data['recordings'][recordingID]
-		# try:
-		# 	year = int(recording['year'])
-		# except:
-		# 	year = ''
-		# try:
-		# 	month = int(recording['month'])
-		# except:
-		# 	month = ''
-		# try:
-		# 	day = int(recording['day'])
-		# except:
-		# 	day = ''
 		digiStatus = digitalStatuses[recording['digitalStatus']]
 		print(recording)
 		try:
@@ -203,6 +192,8 @@ def add_recordings(data,connect):
 				)
 			connect.close_cursor()
 			for speakerID in recording['speakers']:
+				# iterate over the list of speakers 
+				# add a record to the join table for recordingID,speakerID
 				try:
 					connect.query(
 						insertRecordingSpeaker,
@@ -214,6 +205,8 @@ def add_recordings(data,connect):
 					print("can't create record for conection"
 						" btw {} and {}".format(speakerID,recordingID))
 			for filmTitleID in recording['filmTitles']:
+				# iterate over the list of film titles 
+				# add a record to the join table for recordingID,filmID
 				try:
 					connect.query(
 						insertRecordingFilm,
@@ -230,13 +223,12 @@ def add_recordings(data,connect):
 	print("ALL DONE")
 
 def main():
-	with open('audioCombined.json','r') as f:
+	with open('data_files/combined-audio-data-cleaned.json','r') as f:
 		data = json.load(f)
 
 	try:
 		connect = DB("root")
 		connect.connect()
-		# cursor = connect.query(createDbSQL)
 		cursor = connect.close_cursor()
 	except:
 		print("Error: uh, error.. :(")

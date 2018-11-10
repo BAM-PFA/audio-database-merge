@@ -1,3 +1,4 @@
+# this is a JSON object of the OpenRefine transformations done on the Piction data CSV
 [
   {
     "op": "core/text-transform",

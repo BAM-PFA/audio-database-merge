@@ -4,6 +4,8 @@ import os
 import sys
 import getpass
 ###################################
+# THIS HAS TO BE RUN ON AN EXISTING EMPTY DATABASE 
+# (HARD-CODED TO EXPECT IT TO BE CALLED 'audio')
 ###################################
 
 class DB:
@@ -112,6 +114,7 @@ def create_db(user):
 		);\
 	''')
 
+	# JOIN table for recording ID and digital status ID
 	createRecordingDigiStatus = ('''CREATE TABLE recording_digiStatus(\
 		recordingID INT(20) NOT NULL,\
 		recordingDigitalStatusID INT(20) NOT NULL,\
@@ -121,6 +124,7 @@ def create_db(user):
 		);\
 	''')
 
+	# JOIN table for recording ID and speaker ID
 	createRecordingSpeaker = ('''CREATE TABLE recording_speaker(\
 		recordingID INT(20) NOT NULL,\
 		speakerID INT(20) NOT NULL,\
@@ -130,6 +134,7 @@ def create_db(user):
 		);\
 	''')
 
+	# JOIN table for recording ID and film ID
 	createRecordingFilm = ('''CREATE TABLE recording_film(\
 		recordingID INT(20) NOT NULL,\
 		filmTitleID INT(20) NOT NULL,\
@@ -157,6 +162,7 @@ def create_db(user):
 			print("mysql error... check your settings and try again.")
 			sys.exit()
 	try:
+		# there are only 3 possible values (now) so insert them here
 		for status in ["Born-digital","Digitized","Analog tape"]:
 			cursor = connect.query(insertDigiStatuses,status)
 		cursor = connect.close_cursor()	
