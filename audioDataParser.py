@@ -2,7 +2,7 @@
 import json
 import sys
 
-from audioDb import DB as DB
+from audioDbBuilder import DB as DB
 
 '''
 This takes the normalized JSON object and inserts records for
