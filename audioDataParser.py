@@ -19,6 +19,8 @@ insertRecording = (
 		recordingPictionID,
 		recordingFilename,
 		recordingPermissions,
+		recordingPermissionsLegacy,
+		recordingPermissionsNote,
 		recordingDate,
 		recordingDay,
 		recordingMonth,
@@ -34,6 +36,8 @@ insertRecording = (
 		recordingFileSize
 		)
 	VALUES (
+		%s,
+		%s,
 		%s,
 		%s,
 		%s,
@@ -168,6 +172,8 @@ def add_recordings(data,connect):
 				recording['pictionID'],
 				recording['filename'],
 				recording['permissions'],
+				recording['permissionsLegacy'],
+				recording['permissionsNote'],
 				recording['date'],
 				recording['day'],
 				recording['month'],

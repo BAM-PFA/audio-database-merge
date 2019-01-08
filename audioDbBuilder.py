@@ -66,6 +66,8 @@ def create_db(user):
 		recordingPictionID VARCHAR(50),\
 		recordingFilename VARCHAR(100),\
 		recordingPermissions VARCHAR(200),\
+		recordingPermissionsLegacy VARCHAR(200),\
+		recordingPermissionsNote VARCHAR(200),\
 		recordingDate VARCHAR(20),\
 		recordingDay INT(10),\
 		recordingMonth INT(10),\

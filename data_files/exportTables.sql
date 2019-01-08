@@ -1,7 +1,7 @@
 # recordings
-SELECT 'recordingID','recordingPictionID','recordingFilename','recordingPermissions','recordingDate','recordingDay','recordingMonth','recordingYear','recordingLocation','recordingPFASeries','recordingEventTitle','recordingEventNotes','recordingEventRecordingNotes','recordingTapeNumber','recordingTapeSide','recordingDigitizer','recordingFileSize'
+SELECT 'recordingID','recordingPictionID','recordingFilename','recordingPermissions','recordingPermissionsLegacy','recordingPermissionsNote','recordingDate','recordingDay','recordingMonth','recordingYear','recordingLocation','recordingPFASeries','recordingEventTitle','recordingEventNotes','recordingEventRecordingNotes','recordingTapeNumber','recordingTapeSide','recordingDigitizer','recordingFileSize'
 UNION ALL
-SELECT recordingID, recordingPictionID, recordingFilename, recordingPermissions, recordingDate, recordingDay, recordingMonth, recordingYear, recordingLocation, recordingPFASeries, recordingEventTitle, recordingEventNotes, recordingEventRecordingNotes, recordingTapeNumber, recordingTapeSide, recordingDigitizer, recordingFileSize
+SELECT recordingID, recordingPictionID, recordingFilename, recordingPermissions, recordingPermissions, recordingPermissionsNote, recordingDate, recordingDay, recordingMonth, recordingYear, recordingLocation, recordingPFASeries, recordingEventTitle, recordingEventNotes, recordingEventRecordingNotes, recordingTapeNumber, recordingTapeSide, recordingDigitizer, recordingFileSize
 FROM recordings
 INTO OUTFILE '/Users/michael/recordings.csv';
 

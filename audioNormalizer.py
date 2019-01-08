@@ -71,6 +71,8 @@ with open('data_files/combined-audio-data-cleaned.csv','r') as f:
 		output['recordings'][recordingID]['pictionID'] = row['piction ID']
 		output['recordings'][recordingID]['filename'] = row['filename']
 		output['recordings'][recordingID]['permissions'] = row['permissions']
+		output['recordings'][recordingID]['permissionsLegacy'] = row['permissionsLegacy']
+		output['recordings'][recordingID]['permissionsNote'] = row['permissions note']
 		output['recordings'][recordingID]['date'] = row['iso 8601']
 		output['recordings'][recordingID]['day'] = row['day']
 		output['recordings'][recordingID]['month'] = row['month']
@@ -121,5 +123,5 @@ with open('data_files/combined-audio-data-cleaned.csv','r') as f:
 						output['filmTitles'][theFilmID]['fk_usedBy'].append(row['event ID'])
 
 # print(output)
-with open('data_files/combined-audio-data-cleaned2.json','w+') as f:
+with open('data_files/combined-audio-data-cleaned.json','w+') as f:
 	json.dump(output, f)
